@@ -141,8 +141,7 @@ nav {
 
 /* --- Section Styling (Home Page) --- */
 .hero {
-  background: url("placeholder-pet-grooming-bg.jpg") no-repeat center
-    center/cover;
+  background: url("./images/banner_pose.jpeg") no-repeat center center/cover;
   background-color: var(--fallback-background); /* Fallback color */
   color: var(--body-text-color);
   text-align: center;
@@ -150,18 +149,27 @@ nav {
   min-height: 50vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 
-  h1 {
-    color: var(--header-color);
-    font-size: 3em;
-    margin-bottom: 10px;
-  }
+  .hero-text {
+    background-color: rgba(0, 0, 0, .3);
+    padding: 10px 50px;
 
-  p {
-    font-size: 1.2em;
-    max-width: 600px;
+    h1 {
+      color: rgb(247, 247, 247);
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      margin: 0 auto;
+    }
   }
 }
 
@@ -170,7 +178,7 @@ nav {
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
-  
+
   h2 {
     text-shadow: 1px 1px 1px rbga(0, 0, 0, 0.3);
   }
@@ -178,7 +186,7 @@ nav {
 
 /* style on each page header section */
 .page-header {
-  background: linear-gradient(135deg, #61c8ff 6%, #f8f8f8 100%);
+  background: linear-gradient(135deg, var(--home-background) 50%, #f8f8f8 100%);
   text-align: center;
   padding: 40px 20px 40px;
 }
