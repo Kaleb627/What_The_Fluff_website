@@ -462,14 +462,6 @@ nav {
   resize: vertical;
 }
 
-.map-placeholder {
-  padding: 20px;
-  background-color: #e9ecef;
-  border-radius: 5px;
-  text-align: center;
-  color: #6c757d;
-}
-
 /* ------- Services Table (services.html) ------- */
 .services-header {
   h1 {
@@ -704,6 +696,8 @@ nav {
     text-align: center;
     gap: 5px;
   }
+
+  .map-placeholder{}
 
   .map-placeholder iframe {
     width: 100%;
