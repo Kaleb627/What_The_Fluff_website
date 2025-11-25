@@ -170,6 +170,10 @@ nav {
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
+  
+  h2 {
+    text-shadow: 1px 1px 1px rbga(0, 0, 0, 0.3);
+  }
 }
 
 /* style on each page header section */
