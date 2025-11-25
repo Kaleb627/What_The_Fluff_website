@@ -73,8 +73,9 @@ nav {
   transform: translateX(-50%);
 
   img {
+    margin: 1px;
     border-radius: 50%;
-    height: 40px;
+    height: 50px;
   }
 }
 
@@ -188,7 +189,7 @@ nav {
 .page-header {
   background: linear-gradient(135deg, var(--home-background) 50%, #f8f8f8 100%);
   text-align: center;
-  padding: 40px 20px 40px;
+  padding: 10px 20px 40px;
 }
 
 /* --- Contact Page Styles --- */
@@ -644,7 +645,7 @@ nav {
     min-height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 
     .hero-text {
@@ -652,7 +653,7 @@ nav {
         padding-bottom: 50px;
 
       h1 {
-        font-size: 2.25em;
+        font-size: 1.6em;
       }
     }
   }
