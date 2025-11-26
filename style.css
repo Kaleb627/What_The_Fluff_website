@@ -261,8 +261,9 @@ footer {
 
 .specific-page-section {
   max-width: 800px;
-  margin: 40px auto;
+  margin: 30px auto;
   padding: 40px;
+  padding-top: 5px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -273,6 +274,23 @@ footer {
     padding-bottom: 15px;
     margin-bottom: 30px;
   }
+}
+
+.about-gallery {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 15px;
+    max-width: fit-content;
+    background-color: #fff;
+    border-radius: 20px;
+
+    img {
+        max-height: 200px;
+        border-radius: 20px;
+    }
+
 }
 
 /* ------- Services Table (services.html) ------- */
@@ -678,6 +696,22 @@ footer {
   .content-section .facebook {
     overflow: hidden;
     max-width: 400px;
+}
+
+/* about section */
+
+.specific-page-section {
+    margin: 10px;
+}
+
+.about-gallery {
+    flex-direction: column;
+    align-items: center;
+    max-width: 70%;
+
+    img {
+        max-height: 230px;
+    }
 }
 
   table {
