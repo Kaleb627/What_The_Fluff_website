@@ -34,15 +34,7 @@ a {
   background-color: var(--fallback-background);
 }
 
-/* --- Footer --- */
-footer {
-  background-color: var(--body-text-color);
-  color: var(--white);
-  text-align: center;
-  padding: 20px 0;
-}
-
-/* --- Header & Navigation --- */
+/* --- Header & Navigation  --- */
 header {
   background-color: var(--white);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -103,6 +95,14 @@ nav {
       border-bottom: 2px solid var(--accent-color);
     }
   }
+}
+
+/* --- Footer --- */
+footer {
+  background-color: var(--body-text-color);
+  color: var(--white);
+  text-align: center;
+  padding: 20px 0;
 }
 
 /* --- Buttons --- */
@@ -186,6 +186,11 @@ nav {
     text-shadow: 1px 1px 1px rbga(0, 0, 0, 0.3);
   }
 }
+
+.content-section .facebook {
+    border-radius: 20px;
+}
+
 
 /* style on each page header section */
 .page-header {
