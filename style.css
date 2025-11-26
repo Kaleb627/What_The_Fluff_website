@@ -255,7 +255,6 @@ footer {
 /* --- About Page (about.html) --- */
 .page-main {
   min-height: 80vh;
-  padding-top: 10px; /* Space for the fixed header */
   padding-bottom: 10px;
 }
 
