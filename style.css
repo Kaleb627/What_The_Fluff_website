@@ -194,8 +194,6 @@ nav {
   padding: 10px 20px 40px;
 }
 
-
-
 /* --- Services Grid --- */
 .services-grid {
   display: grid;
@@ -506,6 +504,11 @@ nav {
     font-weight: 600;
     margin-bottom: 8px;
     color: var(--body-text-color);
+
+    span {
+      content: "*";
+      color: red;
+    }
   }
 }
 
