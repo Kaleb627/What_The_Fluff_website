@@ -142,12 +142,12 @@ footer {
 
 /* --- Section Styling (Home Page) --- */
 .hero {
-  background: url("./images/banner_pose.jpeg") no-repeat center center/cover;
+  background: url("./images/banner_pose.jpeg") no-repeat center 45%/cover;
   background-color: var(--fallback-background); /* Fallback color */
   color: var(--body-text-color);
   text-align: center;
   padding: 150px 20px;
-  min-height: 50vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -189,7 +189,6 @@ footer {
 
 .facebook-section {
   grid-column: 1 / -1;
-  background: var(--white);
   border-radius: 20px;
   padding: 30px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
