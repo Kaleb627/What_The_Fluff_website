@@ -745,7 +745,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    transition: right 0.3s ease-in-out;
+    transition: right 0.12s ease-in-out;
   }
 
   .nav-links.active {
