@@ -177,7 +177,7 @@ footer {
 
 .content-section {
   padding: 30px 40px;
-  max-width: 1000px;
+  max-width: 60%;
   margin: 0 auto;
   text-align: center;
   border-radius: 20px;
@@ -185,6 +185,10 @@ footer {
   h2 {
     text-shadow: 1px 1px 1px rbga(0, 0, 0, 0.3);
   }
+}
+
+#facebook {
+  margin-top: 25px;
 }
 
 .facebook-section {
@@ -695,25 +699,23 @@ footer {
     }
   }
 
-  .content-section .facebook {
-    overflow: hidden;
-    max-width: 400px;
-}
+  .content-section {
+    max-width: 71%;
+  }
 
-/* about section */
+  /* about page */
+  .about-gallery {
+      .picture-container {
+          flex-direction: column;
+          max-width: 100%;
+          padding-bottom: 20px;
+      }
 
-.about-gallery {
-    .picture-container {
-        flex-direction: column;
-        max-width: 100%;
-        padding-bottom: 20px;
-    }
-
-    img {
-        max-height: 250px;
-        border-radius: 20px;
-    }
-}
+      img {
+          max-height: 250px;
+          border-radius: 20px;
+      }
+  }
 
   table {
     min-width: 500px; /* Adjust as needed */
