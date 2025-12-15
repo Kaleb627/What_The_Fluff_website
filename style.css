@@ -776,9 +776,21 @@ footer {
   }
 }
 @media (max-width: 350px) {
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 0px;
+  }
+
+  .service-card {
+    padding: 10px;
+  }
+
   .contact-info-section,
   .contact-form-section,
   .map-section {
     padding: 20px 5px;
+    margin: 0 5px;
   }
 }
