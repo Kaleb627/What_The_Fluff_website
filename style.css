@@ -441,7 +441,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  max-width: 100%;
+  max-width: 75%;
   overflow-x: hidden;
 }
 
@@ -450,7 +450,6 @@ footer {
   border-radius: 12px;
   padding: 40px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
 
   h2 {
     margin-top: 0;
@@ -512,7 +511,6 @@ footer {
   padding: 20px;
   border-radius: 8px;
   margin-top: 20px;
-  max-width: 100%;
 
   h3 {
     margin-top: 0;
@@ -546,7 +544,6 @@ footer {
   border-radius: 12px;
   padding: 40px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
 
   h2 {
     margin-top: 0;
@@ -607,7 +604,6 @@ footer {
   border-radius: 12px;
   padding: 40px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
 
   h2 {
     margin-top: 0;
