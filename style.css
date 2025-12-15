@@ -726,7 +726,7 @@ footer {
   }
 
   .logo-pic {
-    position: fixed;
+    position: sticky;
     height: 40px;
     width: auto;
     transform: none;
