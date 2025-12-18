@@ -215,13 +215,13 @@ footer {
   align-items: center;
 
   .hero-text {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.35);
     padding: 10px 50px;
     border-radius: 20px;
 
     h1 {
       color: rgb(247, 247, 247);
-      font-size: 3em;
+      font-size: 2.5rem;
       margin-bottom: 10px;
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     }
@@ -259,7 +259,7 @@ footer {
 .gallery-img {
   width: 100%;
   height: 250px; /* Forces all images to be the same height */
-  object-fit: cover; /* Ensures images crop neatly to fill the square without stretching */
+  object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -274,6 +274,7 @@ footer {
   border-color: var(--accent-color);
 }
 
+/* removed facebook section until further notice, including embed is a more involved than i expected */
 /* #facebook {
   margin-top: 25px;
 }
@@ -344,56 +345,64 @@ footer {
 }
 
 /* --- About Page (about.html) --- */
-/* 1. Layout the Main Container */
+/* Layout the Main Container */
 .about-page-main {
   flex: 1;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Split 50% / 50% */
-  min-height: 80vh; /* Ensure the section is tall enough */
+  grid-template-columns: 1fr 1fr;
+  min-height: 80vh;
 }
 
-/* 2. Style the Text Side */
+/* Style the Text Side */
 .specific-page-section {
-  /* Override previous specific-page-section styles to fit the split layout */
   max-width: 100%;
   background-color: white;
   margin: 0;
   padding: 60px; /* Give the text some breathing room */
-  box-shadow: none; /* Optional: Remove shadow for a cleaner split look */
+  box-shadow: none;
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centers text vertically */
 }
 
-/* 3. Style the Image Side */
 .about-image-side {
-  background-image: url("./images/pose+dog.jpeg");
-  background-size: contain;    /* This makes the image fill the space completely */
-  background-position: cover; /* Centers the image */
-  background-repeat: no-repeat;
+  position: relative;  /*  Anchors the image to this box */
+  height: 100%;        /*  Fills the full height of the grid column */
+  overflow: hidden;    /*  Chops off any excess image */
+  border-radius: 15px;
 }
 
-/* 4. Mobile Responsiveness */
+.about-image-side img {
+  position: absolute;  /* Takes image "out of the flow" so it doesn't push height */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* Ensures it covers the area without squishing */
+}
+
 @media (max-width: 880px) {
   .about-page-main {
-    grid-template-columns: 1fr; /* Stack vertically */
+    grid-template-columns: 1fr;
   }
 
-  .about-image-side {
-    width: 100%;      /* Force container to be full width */
-    height: auto;     /* Allow height to adjust automatically */
-    min-height: 0;    /* Remove any forced minimum height */
-    order: -1;        /* Move image to the top */
+.about-image-side {
+    width: 100%;
+    height: auto;      /* Let height adjust naturally on phone */
+    min-height: 25vh; /* Guarantees it shows up */
+    order: -1;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   .about-image-side img {
-    width: 100%;      /* Stretch image to fill the screen width */
-    height: auto;     /* Scale height proportionally (no squishing) */
-    display: block;   /* Removes tiny gap at bottom of image */
+    position: static;  /* Resets the 'absolute' positioning from desktop */
+    width: 100%;
+    height: auto;
   }
   
   .specific-page-section {
-    padding: 30px;    /* Reduce text padding on mobile */
+    padding: 30px;
   }
 }
 
