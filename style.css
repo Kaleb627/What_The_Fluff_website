@@ -201,6 +201,86 @@ footer {
   }
 }
 
+/* --- Lightbox / Modal Styles --- */
+.lightbox {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  z-index: 2000; /* High z-index to sit on top of everything */
+  padding-top: 50px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity for shadow effect */
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-wrapper {
+  position: relative; /* Acts as the anchor for the button */
+  display: inline-block; /* Shrinks to fit the image width */
+  max-width: 90%; /* Prevents it from hitting the screen edges */
+  max-height: 85vh;
+}
+
+/* The Enlarged Image */
+.lightbox-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 700px; /* Limits width on large screens */
+  max-height: 80vh; /* Prevents scrolling if image is tall */
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  animation-name: zoom;
+  animation-duration: 0.2s;
+}
+
+/* Close Button (The 'X') */
+.close-btn {
+  /* Position it top-right of the image */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  /* perfect circle */
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  
+  /* Center the X */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Removing padding prevents stretching */
+
+  /* Visual Styles */
+  background-color: rgba(0, 0, 0, 0.6); /* shadow background */
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  /* Ensure it sits on top of the image if they overlap on small screens */
+  z-index: 2001; 
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: var(--accent-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add a tiny zoom animation when opening */
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
 /* --- Section Styling (Home Page) --- */
 .hero {
   background: url("./images/banner_pose.jpeg") no-repeat center 45% / cover;
@@ -830,6 +910,14 @@ footer {
   .content-section {
     max-width: 71%;
   }
+/* Mobile adjustment for lightbox */
+  .lightbox-content {
+    width: 95%;
+  }
+  .close-btn {
+    top: 10px;
+    right: 20px;
+  }
 
   /* about page */
   .about-gallery {
@@ -913,7 +1001,7 @@ footer {
   .gallery-img {
     height: 180px; /* Smaller height for mobile */
   }
-}
+
   .logo span {
     font-size: 1.4rem;
   }
@@ -929,6 +1017,7 @@ footer {
     margin: 0 5px;
   }
 }
+
 @media (max-width: 400px) {
   .hero {
     .hero-text {
