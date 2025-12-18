@@ -415,9 +415,15 @@ footer {
 
 /* style on each page header section */
 .page-header {
-  background: linear-gradient(135deg, var(--home-background) 50%, #f8f8f8 100%);
+  background: var(--home-background);
+  color: var(--header-color-background);
   text-align: center;
-  padding: 10px 20px 40px;
+  padding: 10px 20px 8px;
+  font-size: 1.2rem;
+
+  h1 {
+    color: var(--header-color-background);
+  }
 }
 
 /* --- Services Grid --- */
