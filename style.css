@@ -109,11 +109,18 @@ nav {
   #facebook-logo {
     color: blue;
   }
-  
+
   #instagram-logo {
     color: white;
     border-radius: 5px;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
     padding-left: 1px;
   }
 }
@@ -865,6 +872,25 @@ footer {
   .map-section {
     padding: 20px 5px;
     margin: 0 5px;
+  }
+}
+@media (max-width: 400px) {
+  .hero {
+    .hero-text {
+      max-height: 20vh;
+      padding: none;
+      h1 {
+        font-size: 1.6;
+        line-height: 2rem;
+        margin-bottom: none;
+      }
+      p {
+        display: none;
+      }
+      btn {
+        padding: 5px 18px;
+      }
+    }
   }
 }
 
