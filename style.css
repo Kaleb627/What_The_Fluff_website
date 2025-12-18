@@ -355,7 +355,8 @@ footer {
 /* 2. Style the Text Side */
 .specific-page-section {
   /* Override previous specific-page-section styles to fit the split layout */
-  max-width: 100%; 
+  max-width: 100%;
+  background-color: white;
   margin: 0;
   padding: 60px; /* Give the text some breathing room */
   box-shadow: none; /* Optional: Remove shadow for a cleaner split look */
@@ -375,16 +376,24 @@ footer {
 /* 4. Mobile Responsiveness */
 @media (max-width: 880px) {
   .about-page-main {
-    grid-template-columns: 1fr; /* Stack them vertically on mobile */
+    grid-template-columns: 1fr; /* Stack vertically */
   }
 
   .about-image-side {
-    height: 300px; /* Give the image a fixed height on mobile */
-    order: -1; /* Optional: Moves image to the TOP on mobile */
+    width: 100%;      /* Force container to be full width */
+    height: auto;     /* Allow height to adjust automatically */
+    min-height: 0;    /* Remove any forced minimum height */
+    order: -1;        /* Move image to the top */
+  }
+
+  .about-image-side img {
+    width: 100%;      /* Stretch image to fill the screen width */
+    height: auto;     /* Scale height proportionally (no squishing) */
+    display: block;   /* Removes tiny gap at bottom of image */
   }
   
   .specific-page-section {
-    padding: 30px;
+    padding: 30px;    /* Reduce text padding on mobile */
   }
 }
 
