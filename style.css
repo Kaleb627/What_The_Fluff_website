@@ -2,10 +2,12 @@
 :root {
   --home-background: #4f8b88;
   --header-color: #e06f34;
+  --header-color-background: #fff;
   --body-text-color: #000000;
   --white: #fff;
   --accent-color: #02b0a6;
   --fallback-background: #ffffffb1;
+  --button-color: #e06f34;
 }
 
 /* --- Global Styles & Typography --- */
@@ -180,9 +182,9 @@ footer {
 }
 
 .btn {
-  background-color: var(--header-color);
+  background-color: var(--button-color);
   color: var(--white);
-  border: 2px solid var(--header-color);
+  border: 2px solid var(--button-color);
 
   &:hover {
     background-color: var(--accent-color);
@@ -192,11 +194,11 @@ footer {
 
 .btn-secondary {
   background-color: transparent;
-  color: var(--header-color);
-  border: 2px solid var(--header-color);
+  color: var(--button-color);
+  border: 2px solid var(--button-color);
 
   &:hover {
-    background-color: var(--header-color);
+    background-color: var(--button-color);
     color: var(--white);
   }
 }
@@ -325,6 +327,21 @@ footer {
 
   h2 {
     text-shadow: 1px 1px 1px rbga(0, 0, 0, 0.3);
+    color: var(--header-color-background);
+  }
+
+  p {
+    color: white;
+  }
+}
+
+#services {
+  h2 {
+    color: var(--header-color);
+  }
+
+  p {
+    color: var(--body-text-color);
   }
 }
 
@@ -398,9 +415,15 @@ footer {
 
 /* style on each page header section */
 .page-header {
-  background: linear-gradient(135deg, var(--home-background) 50%, #f8f8f8 100%);
+  background: var(--home-background);
+  color: var(--header-color-background);
   text-align: center;
-  padding: 10px 20px 40px;
+  padding: 10px 20px 8px;
+  font-size: 1.2rem;
+
+  h1 {
+    color: var(--header-color-background);
+  }
 }
 
 /* --- Services Grid --- */
