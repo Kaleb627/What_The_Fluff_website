@@ -584,6 +584,26 @@ footer {
   }
 }
 
+/* .addon-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.addon-item {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  border-left: 4px solid var(--accent-color);
+
+  strong {
+    color: var(--header-color);
+    display: block;
+    margin-bottom: 5px;
+  }
+} */
+
 .note {
   background: #fff9e6;
   border-left: 4px solid #ffc107;
@@ -598,10 +618,19 @@ footer {
 
 .cta-section {
   text-align: center;
-  padding: 40px 20px;
-  background: linear-gradient(135deg, #e6f0ff 0%, #f8f8f8 100%);
+  padding: 20px 15px;
+  background-color: var(--header-color-background);
   margin-top: 40px;
   border-radius: 12px;
+  padding-bottom: 40px;
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
 }
 
 /* ------- Contact Form (contact.html) ------- */
