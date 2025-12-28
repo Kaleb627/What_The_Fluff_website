@@ -596,14 +596,12 @@ footer {
 
 /* ------- Contact Form (contact.html) ------- */
 .contact-container {
-  max-width: 1200px;
   margin: 40px auto;
   padding: 0 20px 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  max-width: 75%;
-  overflow-x: hidden;
+  max-width: 70%;
 }
 
 .contact-info-section {
@@ -796,8 +794,8 @@ footer {
 }
 
 .map-placeholder iframe {
-  width: 80%;
-  max-width: 100%;
+  width: 60%;
+  max-width: 90%;
   height: 400px;
   border: 0;
   border-radius: 8px;
