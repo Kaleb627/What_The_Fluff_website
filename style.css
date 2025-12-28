@@ -977,33 +977,8 @@ footer {
   }
 
   /* about page */
-  .about-gallery {
-    .picture-container {
-      flex-direction: column;
-      max-width: 100%;
-      padding-bottom: 20px;
-    }
-
-    img {
-      max-height: 250px;
-      border-radius: 20px;
-    }
-  }
-
-  table {
-    min-width: 500px;
-  }
-
   .service-category {
     padding: 20px;
-  }
-
-  .pricing-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .addon-list {
-    grid-template-columns: 1fr;
   }
 }
 
