@@ -19,9 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_content .= "Service: $service\n\n";
     $email_content .= "Message:\n$message\n";
 
-    // IMPORTANT: Hostinger requires valid headers to avoid Spam folder
     $headers = "From: $from_email\r\n";
-    $headers .= "Reply-To: $email\r\n"; // This lets you hit "Reply" and email the customer, not yourself
+    $headers .= "Reply-To: $email\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion();
 
     if (mail($to_email, $subject, $email_content, $headers)) {
