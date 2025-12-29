@@ -1,5 +1,5 @@
 <?php
-$from_email = "contact@yourdomain.com";
+$from_email = "contact@what-the-fluff.net";
 $to_email = "whatthefluff2024@gmail.com";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
