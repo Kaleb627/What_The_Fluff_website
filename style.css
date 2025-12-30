@@ -94,11 +94,11 @@ nav {
     font-size: 1.1rem;
     padding: 5px 0;
     transition: color 0.3s;
+  }
 
-    &a:hover {
-      color: var(--accent-color);
-      border-bottom: 2px solid var(--accent-color);
-    }
+  a:hover {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
   }
 }
 
