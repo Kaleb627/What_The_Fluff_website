@@ -367,7 +367,7 @@ footer {
   background: var(--home-background);
   color: var(--header-color-background);
   text-align: center;
-  padding: 10px 20px 8px;
+  padding: 10px 20px 0px;
   font-size: 1.2rem;
 
   h1 {
@@ -425,7 +425,6 @@ footer {
 .about-image-side {
   position: relative; /*  Anchors the image to this box */
   height: 100%; /*  Fills the full height of the grid column */
-  overflow: hidden; /*  Chops off any excess image */
   border-radius: 15px;
 }
 
@@ -438,11 +437,10 @@ footer {
   object-fit: contain; /* Ensures it covers the area without squishing */
 }
 
-/* ------- Services Table (services.html) ------- */
+/* ------- Services (services.html) ------- */
 .services-header {
   h1 {
     font-size: 2.5em;
-    margin-bottom: 10px;
   }
   p {
     font-size: 1.2em;
@@ -487,6 +485,7 @@ footer {
 
 .package-card {
   background: #f9f9f9;
+  color: var();
   border: 2px solid #e0e0e0;
   border-radius: 8px;
   padding: 20px;
@@ -782,7 +781,7 @@ footer {
 .map-placeholder iframe {
   width: 60%;
   max-width: 90%;
-  height: 400px;
+  height: 300px;
   border: 0;
   border-radius: 8px;
 }
